@@ -1,0 +1,67 @@
+[
+  {
+    "id": "8d7d5a5c-ab8a-487f-89b0-e519abf5baa3",
+    "name": "mouse2",
+    "price": 3000
+  },
+  {
+    "id": "6232300a-3fb9-493e-9148-c7697c442311",
+    "name": "mouse2",
+    "price": 3000
+  },
+  {
+    "id": "cdf67f58-31c3-4f89-a594-cc5a155da4d5",
+    "name": "mouse2",
+    "price": 3000
+  },
+  {
+    "name": "monitor",
+    "price": 3000,
+    "id": "a44a4c0e-59af-4bf6-9304-7d23ab47244e"
+  },
+  {
+    "name": "parlante",
+    "price": 500,
+    "id": "7546cbcb-035f-4442-820a-4221ef300800"
+  },
+  {
+    "name": "monitor",
+    "price": 3000,
+    "id": "48f65577-f8d2-453e-9125-446e874b6271"
+  },
+  {
+    "name": "monitor",
+    "price": 3000,
+    "id": "b0bfa6a5-2892-498d-a51d-05ef91a40385"
+  },
+  {
+    "name": "monitor",
+    "price": 3000,
+    "id": "0f85c079-df77-44ec-8711-7e3c533021c1"
+  },
+  {
+    "name": "dos",
+    "price": 500,
+    "id": "f59926c8-d980-4971-968c-27c99bac3625"
+  },
+  {
+    "name": "uno",
+    "price": 3000,
+    "id": "18bc46c4-fe68-46f1-8c5d-c31ffe185380"
+  },
+  {
+    "name": "dos",
+    "price": 500,
+    "id": "23eee467-a595-452e-ab87-869ede8cf44c"
+  },
+  {
+    "name": "tres",
+    "price": 3000,
+    "id": "bedecf63-350c-4fa6-8701-7d0d75ecfa42"
+  },
+  {
+    "name": "cuatro",
+    "price": 500,
+    "id": "ec36dad5-fe56-4c55-a513-fb0ff5f7c619"
+  }
+]
