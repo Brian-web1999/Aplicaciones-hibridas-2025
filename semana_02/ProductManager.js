@@ -1,4 +1,3 @@
-const { error } = require('console');
 const fs = require ('fs/promises');
 const path = 'products.json';
 
@@ -43,8 +42,8 @@ class ProductManager {
 
 
     async getProductById(id){
-       await this.getProducts();
-       const product = this.products.find(item => item.id == id)
+       const list = await this.getProducts();
+       const product = list.find(item => item.id == id)
        return product ? product : {};
 
     }

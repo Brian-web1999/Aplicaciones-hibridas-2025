@@ -1,5 +1,6 @@
 # Git
 
+## incializamos un Repositorio
 - Configurar el usuario
 ``` bash
     git config --global user.name "Brian"
@@ -20,4 +21,15 @@ git init
 
 ``` bash
     git commit -m "Semana 02 - Modulos"
+```
+
+## Vinculamos GitHub con el repositorio local
+
+``` bash
+    git remote add origin https://github.com/Brian-web1999/Aplicaciones-hibridas-2025.git
+```
+
+- Subimos los commits
+``` bash
+    git push origin master
 ```

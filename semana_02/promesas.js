@@ -12,12 +12,12 @@ class ProductManager {
     }
 
     setProduct(product){
-
-
         this.getProducts().then(() => {
             product.id = this.randomID();
 
             this.products.push(product);
+
+
     
             const data = JSON.stringify(this.products , null, 2);
             fs.writeFile(path, data).then( () => {
