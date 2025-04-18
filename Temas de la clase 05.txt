@@ -1,0 +1,4 @@
+Temas de la clase:
+- API REST CON EXPRESS.JS
+- servidor web con express
+- NPM
