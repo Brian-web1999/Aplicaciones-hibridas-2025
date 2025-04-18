@@ -51,4 +51,4 @@ class ProductManager {
 
 // La lista es a modo ejemplo
 const lista = [1,2,3,4];
-module.exports = {ProductManager, lista};
+module.exports = {ProductManager};

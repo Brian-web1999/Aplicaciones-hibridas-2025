@@ -63,5 +63,15 @@
     "name": "cuatro",
     "price": 500,
     "id": "ec36dad5-fe56-4c55-a513-fb0ff5f7c619"
+  },
+  {
+    "name": "tres",
+    "price": 3000,
+    "id": "a62c2860-6513-44b0-9e56-63b51779bb94"
+  },
+  {
+    "name": "cuatro",
+    "price": 500,
+    "id": "9cc42029-1d99-4efd-b704-faf5da65df95"
   }
 ]
