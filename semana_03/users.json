@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Julia",
+    "email": "julia@mail.com"
+  },
+  {
+    "id": 2,
+    "name": "Mateo",
+    "email": "mateo@mail.com"
+  },
+  {
+    "id": 3,
+    "name": "Pedro",
+    "email": "pedro@mail.com"
+  },
+  {
+    "id": 4,
+    "name": "Micaela",
+    "email": "micaela@mail.com"
+  },
+  {
+    "name": "Sofia",
+    "email": "sofia@mail.com",
+    "id": "57291451-ce96-4167-9205-707502ac9459"
+  },
+  {
+    "name": "Julieta",
+    "email": "julieta@gmail.com",
+    "id": "e9629a62-37a4-479b-b0c4-a24cbb88f61e"
+  },
+  {
+    "name": "Sofia2",
+    "email": "sofia@mail.com",
+    "id": "9fe0e01f-b947-4997-b264-aa29c9077f05"
+  },
+  {
+    "name": "Sofia3",
+    "email": "sofia@mail.com",
+    "id": "e14e5431-d0a4-471c-8486-22aaf207d70e"
+  },
+  {
+    "name": "Sofia3",
+    "email": "sofia@mail.com",
+    "id": "af0ef308-abb3-424e-9a71-992a76038a5f"
+  }
+]

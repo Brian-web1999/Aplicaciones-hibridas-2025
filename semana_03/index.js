@@ -1,16 +1,13 @@
 import chalk from 'chalk';
-import express from "express"; // importamos express despues de instalarlo
+import express, { response } from "express"; // importamos express despues de instalarlo
+import UserManager from './UserManager.js';
 
 
 const port = 5000
 const app = express(); // Lo ejecutamos express
+app.use(express.json()) // mildware
 let count = 0
-
-const users = [
-    {id:1, name: "Julia"},
-    {id:2, name: "Mateo"},
-    {id:3, name: "Manuel"},
-]
+const admUser = new UserManager();
 
 
 //Ruta del servidor
@@ -20,22 +17,49 @@ app.get('/', (request, response) =>  {
     response.send('Hola desde Express')
 })
 
-const getUsers = (request, response) => {
+const getUsers = async (request, response) => {
     console.log('GET Users');
-
-
-    response.json(users);
+    const users = await admUser.getUsers();
+    response.json({msg:'Ok', data: users});
 }
 
 // Rutas de la API
 app.get('/api/users', getUsers);
 
-app.get('/api/users/:id', (request, response) => {
+app.get('/api/users/:id', async (request, response) => {
     const id = request.params.id
-    console.log(id);
-    const user = users.find(u => u.id == id)
+    // console.log(id);
+    const user = await admUser.getUserById(id);
+    if(user){
+       response.json({
+         msg:'Ok',
+         data: [user]
+        })
+    } else {
+        response.status(404).json({msg:'Usuario no encontrado', data: []});
+    }
     response.json(user);
 })
+
+app.post('/api/users', async (request, response) => {
+    try {
+        // TODO: Validar los datos
+        const user = await request.body;
+        const id = await admUser.setUser(user);
+        response.status(200).json({
+            msg: "Usuario guardado correctamente",
+            data: { id }
+        })
+
+    } catch (error) {
+        console.error(error)
+        response.status(500).json({
+            msg:"Error del servidor: No se pudo guardar el usuario",
+            data: { id }
+        })
+    }
+});
+
 
 
 
