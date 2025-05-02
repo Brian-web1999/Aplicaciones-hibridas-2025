@@ -1,8 +1,9 @@
 import express from "express"; // Importamos express
+import dotenv from "dotenv";
 import routerAPI from "./routes/index.js"; // ✅ Esto es lo correcto
 
-
-const port = 3000; // Creamos el puerto
+dotenv.config();
+const port = process.env.PORT; // Creamos el puerto
 const app = express(); // Creamos la aplicacion
 // Middleware (Soporte para JSON)
 app.use( express.json() );
