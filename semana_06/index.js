@@ -1,10 +1,29 @@
 import express from "express"; // Importamos express
 import dotenv from "dotenv";
 import routerAPI from "./routes/index.js"; 
+import mongoose from "mongoose";
+
+
 
 dotenv.config();
 const port = process.env.PORT; // Creamos el puerto
 const app = express(); // Creamos la aplicacion
+const uri_db = process.env.URI_DB;
+
+
+//  Conexion con DB
+mongoose.connect(uri_db);
+const db = mongoose.connection;
+
+db.on('error', (error) => {
+    console.error('Ups tenemos un error con la conexion con la DB');
+    console.error({error})
+});
+
+db.once('open', () => {
+    console.info('Conexion correcta')
+})
+
 // Middleware (Soporte para JSON)
 app.use( express.json() );
 

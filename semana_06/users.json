@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Sofia",
+    "email": "sofia@mail.com",
+    "id": "57291451-ce96-4167-9205-707502ac9459"
+  },
+  {
+    "name": "Carla",
+    "email": "carla@davinci.edu.ar",
+    "id": "e9629a62-37a4-479b-b0c4-a24cbb88f61e"
+  },
+  {
+    "name": "Sebastian",
+    "email": "sebastian@davinci.edu.ar",
+    "id": "ecae6d27-0e72-4068-b01a-b733b731345d"
+  },
+  {
+    "name": "Mateo",
+    "email": "mateo@davinci.edu.ar",
+    "id": "6d2da42a-51e7-4565-b071-c24c4d770e89"
+  },
+  {
+    "name": "Mateo",
+    "email": "mateo@davinci.edu.ar",
+    "id": "2448984e-8e57-4086-9700-714d09f67c6d"
+  },
+  {
+    "name": "Mateo",
+    "email": "mateo@davinci.edu.ar",
+    "id": "b595c52f-d5c1-4419-922a-c537fc6ca70e"
+  },
+  {
+    "name": "Samuel",
+    "email": "samuel@davinci.edu.ar",
+    "id": "67fe5fd1-4d8e-4239-b392-9d9bc1755ed8"
+  }
+]
